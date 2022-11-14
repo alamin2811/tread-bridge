@@ -6,6 +6,7 @@ import "@fontsource/poppins";
 import LikeHeart from "../../core/Like-views/LikeHeart";
 import MinMaxValue from "../../core/MinMaxValue/MinMaxValue";
 import BridgeButtons from "../../core/Buttons/BridgeButtons";
+import RangeSliderComponent from "./RangeSlider";
 export const LiquidityRange = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -56,8 +57,7 @@ export const LiquidityRange = () => {
                 >
                   <Img src="/pump.svg" mr="9px"></Img>
                   <Text as="span" color={"white"}>
-                    {" "}
-                    95{" "}
+                    95
                   </Text>
                 </Box>
               </Tooltip>
@@ -104,49 +104,80 @@ export const LiquidityRange = () => {
               display={"flex"}
               justifyContent="center"
               align={"center"}
-              color="white"
-              fontSize={"24px"}
+              color="#FFFFFF"
+              fontSize={{md: "24px", sm: "20px", base: "16px"}}
               lineHeight="24px"
               letterSpacing={"-0.011em"}
               fontWeight="500"
+              mb="8px"
             >
               Current Price: 1637.42 USDT per ETH
             </Text>
           </Box>
-          <Box display={"flex"} justifyContent="center" pt={"40px"}>
-            <Box position="relative">
-              <Img src="/slide.svg" />
-              <Box
-                position={"absolute"}
-                left="161px"
-                top={"0"}
-                w={"0"}
-                height="100%"
-                border="3px solid white"
-                _before={{
-                  content: '""',
-                }}
-              ></Box>
+
+          <Flex
+            justifyContent="space-between"
+            alignItems="flex-start"
+            maxW="582px"
+            mx="auto"
+            mb="8px"
+          >
+            <Box
+              h="24px"
+              w="65px"
+              bg="#343646"
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              fontWeight="700"
+              fontSize="16px"
+              lineHeight="24px"
+              letterSpacing="-0.011em"
+              color="#FFFFFF"
+              borderRadius="2px"
+            >
+              <Text>0%</Text>
             </Box>
+            <Box
+              h="24px"
+              w="65px"
+              bg="#343646"
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              fontWeight="700"
+              fontSize="16px"
+              lineHeight="24px"
+              letterSpacing="-0.011em"
+              color="#FFFFFF"
+              borderRadius="2px"
+            >
+              <Text>100%</Text>
+            </Box>
+          </Flex>
+          <Box maxW="600px" px="15px" w="100%" mx="auto">
+            <RangeSliderComponent w="100%" />
           </Box>
           <Box
             display={"flex"}
             justifyContent="space-between"
             alignContent={"center"}
             color="white"
-            w={"76%"}
+            maxW="612px"
+            w="100%"
+            px="15px"
             margin="auto"
-            fontSize={"21px"}
+            fontSize={{md: "21px", sm: "18px", base: "16px"}}
             lineHeight="24px"
             fontWeight="700"
             letterSpacing={"-0.011em"}
             pt="12px"
           >
-            <Box>0</Box>
-            <Box>1000</Box>
-            <Box>2000</Box>
-            <Box>3000</Box>
-            <Box>4000</Box>
+            <Text>0</Text>
+            <Text>1000</Text>
+            <Text>2000</Text>
+            <Text>3000</Text>
+            <Text>4000</Text>
           </Box>
           <Box
             display={"flex"}

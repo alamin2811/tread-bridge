@@ -1,14 +1,15 @@
 import { ChakraProvider } from "@chakra-ui/react"
+import LayoutWrapper from "../src/component/core/LayoutWrapper/LayoutWrapper";
 import { mynewtheme } from "../styles/theme";
-import Header from './../src/component/core/Header/Header';
 
 
 
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider resetCSS theme={mynewtheme}>
-      <Header/>
-      <Component {...pageProps} />
+      <LayoutWrapper>
+        <Component {...pageProps} />
+      </LayoutWrapper>
     </ChakraProvider>
   )
 }

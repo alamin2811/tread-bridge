@@ -16,12 +16,7 @@ import { LiquidityRange } from "../../app/LiquidityRangeSlide/LiquidityRange";
 export default function Home() {
   return (
     <>
-      <Box
-        backgroundImage="url('/trade-bg.png')"
-        backgroundPosition="center"
-        backgroundRepeat="no-repeat"
-        backgroundSize={"cover"}
-      >
+      <Box>
         <Container maxW={"1320px"} px="20px" py={"34px"}>
           <Banner />
           <Flex
