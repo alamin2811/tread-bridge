@@ -23,7 +23,7 @@ export default function Home() {
         backgroundRepeat="no-repeat"
         backgroundSize={"cover"}
       >
-        <Container maxW={"1320px"} px="20px" py={"34px"}>
+        <Container maxW={"1360px"} px="20px" py={"34px"}>
           <Banner />
           <Flex
             spacing="24px"

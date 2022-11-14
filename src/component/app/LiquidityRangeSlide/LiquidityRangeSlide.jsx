@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <Box>
-        <Container maxW={"1320px"} px="20px" py={"34px"}>
+        <Container maxW={"1360px"} px="20px" py={"34px"}>
           <Banner />
           <Flex
             spacing="24px"
