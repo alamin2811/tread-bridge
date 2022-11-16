@@ -2,7 +2,6 @@ import {
   Button,
   Box,
   Image,
-  Link,
   Popover,
   PopoverTrigger,
   PopoverContent,

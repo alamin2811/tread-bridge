@@ -19,6 +19,7 @@ import SearchBox from "./Search";
 import MenuItemList from './MenuList';
 import MobileMenu from "./MobileMenu";
 import UserMenu from "./UserMenu";
+import AfterLoginMenu from "./AfterLoginMenu";
 
 const Header = () => {
   return (
@@ -59,7 +60,8 @@ const Header = () => {
                   <Image src="/header/notification.svg" alt="icon" />
                 </Button>
                 <Box>
-                  <UserMenu/>
+                  {/* <UserMenu/> */}
+                  <AfterLoginMenu/>
                 </Box>
               </Flex>
               <Box display={{lg: "none", base: "block"}}>

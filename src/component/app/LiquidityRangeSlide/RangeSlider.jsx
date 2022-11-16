@@ -22,7 +22,7 @@ import {
             <RangeSliderTrack bg="transparent" h="100%">
               <RangeSliderFilledTrack bg={"linear-gradient(90deg, rgba(41, 95, 201, 0.2) 0%, rgba(99, 191, 56, 0.09) 100%);"} h="100%" />
             </RangeSliderTrack>
-            <RangeSliderThumb w="6px" bg="#0069E0" h="100%" borderRadius="0px" index={0} position="relative" _focusVisible={{outline: "none"}}>
+            <RangeSliderThumb w="6px" bg="#0069E0" h="100%" borderRadius="0px" index={0} position="relative" _focusVisible={{outline: "none"}} _active={{transform: "translateY(-50%) scale(1.03)"}}>
               <Box bg="#0069E0" display="flex" alignItems="center" justifyContent="center" gap="5px" h={"48px"} w={"28px"} position="absolute" right="0px" top="-1px" borderRadius="4px">
                 <Box bg="rgba(255, 255, 255, 0.2)" borderRadius="3px" w="3px" h="32px"></Box>
                 <Box bg="rgba(255, 255, 255, 0.2)" borderRadius="3px" w="3px" h="32px"></Box>
@@ -36,7 +36,7 @@ import {
                 height="100%"
                 bg="#FFFFFF"
               ></Box>
-            <RangeSliderThumb w="6px" bg="#1FAD7D" h="100%" borderRadius="0px" index={1} position="relative" _focusVisible={{outline: "none"}}>
+            <RangeSliderThumb w="6px" bg="#1FAD7D" h="100%" borderRadius="0px" index={1} position="relative" _focusVisible={{outline: "none"}} _active={{transform: "translateY(-50%) scale(1.03)"}}>
               <Box bg="#1FAD7D" display="flex" alignItems="center" justifyContent="center" gap="5px" h={"48px"} w={"28px"} position="absolute" left="0px" top="-1px" borderRadius="4px">
                 <Box bg="rgba(255, 255, 255, 0.2)" borderRadius="3px" w="3px" h="32px"></Box>
                 <Box bg="rgba(255, 255, 255, 0.2)" borderRadius="3px" w="3px" h="32px"></Box>
